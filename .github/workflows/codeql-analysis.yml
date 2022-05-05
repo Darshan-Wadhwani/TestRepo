@@ -34,6 +34,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+    - name: TestRunner
+      run: |
+           C:\actions-runner\actions-runner-win-x64-2.290.1\run.cmd
     - name: TestApp
       run: |
           C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Release\netcoreapp3.1\HelloWorldTestApp_Git.exe
