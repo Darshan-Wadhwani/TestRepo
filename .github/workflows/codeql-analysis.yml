@@ -34,7 +34,7 @@ jobs:
       run: |
           C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe
           echo ${{ github.event.number }}
-          echo ${{ steps.findPr.outputs.pr }}
+          echo ${{ github.repository }}
           echo ${{ secrets.GITHUB_TOKEN }}
     
 
