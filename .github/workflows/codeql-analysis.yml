@@ -35,6 +35,6 @@ jobs:
     - name: TestApp
       run: |
           C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe ${{ github.event.number }} ${{ github.repository }}
-          echo %SUPER_SECRET%
+          echo ${{ env.SUPER_SECRET }}
 
     
