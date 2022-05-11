@@ -30,9 +30,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      env:
+          SUPER_SECRET: ${{ secrets.TESTTOKEN }}
     - name: TestApp
       run: |
           C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe ${{ github.event.number }} ${{ github.repository }}
-          echo ${{ secrets.TESTTOKEN }}
+          echo ${{ SUPER_SECRET }}
 
     
