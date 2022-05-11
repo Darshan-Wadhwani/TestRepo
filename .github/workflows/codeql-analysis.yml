@@ -32,10 +32,7 @@ jobs:
       uses: actions/checkout@v3
     - name: TestApp
       run: |
-          C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe
-          echo ${{ github.event.number }}
-          echo ${{ github.repository }}
-          echo ${{ secrets.GITHUB_TOKEN }}
+          C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe ${{ github.event.number }} ${{ github.repository }}
     
 
     
