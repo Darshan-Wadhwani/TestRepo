@@ -1,6 +1,6 @@
 
 
-CREATE PROCEDURE SXADBEASAddNewPartitionRange (@Debug bit = 0, @FGNamePrefix varchar(30) = 'EASAuditYear')
+CREATE PROCEDURE SXADBEASAddNewPartitionRangePr (@Debug bit = 0, @FGNamePrefix varchar(30) = 'EASAuditYear')
 AS
 SET NOCOUNT ON
 BEGIN
@@ -101,3 +101,5 @@ BEGIN
 END
 
 GO
+
+
