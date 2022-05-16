@@ -19,7 +19,7 @@ on:
 
 jobs:
   analyze:
-    name: Analyze
+    name: DB Standard Checkin Policy
     runs-on: self-hosted
     permissions:
       actions: read
