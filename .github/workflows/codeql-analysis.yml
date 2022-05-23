@@ -36,6 +36,7 @@ jobs:
           echo $SUPER_SECRET
           echo ${{ env.SUPER_SECRET }}
           echo ${{ secrets.TESTTOKEN }}
+          echo ${{ github.context.payload.pull_request.title }}
       env:
           SUPER_SECRET: ${{ secrets.TESTTOKEN }}
 
