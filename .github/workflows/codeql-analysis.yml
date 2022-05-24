@@ -13,7 +13,7 @@ name: "CodeQL"
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, reopened, edited]
   schedule:
     - cron: '24 17 * * 2'
 
