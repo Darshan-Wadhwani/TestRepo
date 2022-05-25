@@ -13,13 +13,13 @@ name: "CodeQL"
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, reopened, edited]
   schedule:
     - cron: '24 17 * * 2'
 
 jobs:
   analyze:
-    name: Analyze
+    name: DB Standard Checkin Policy
     runs-on: self-hosted
     permissions:
       actions: read
