@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "GitHubDbCheckinAction"
 
 on:
   pull_request:
@@ -30,13 +30,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-    - name: TestApp
+    - name: GitHubDbCheckinPolicy
       run: |
           C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe ${{ github.event.number }} ${{ github.repository }} ${{ secrets.TESTTOKEN }}
-          echo $SUPER_SECRET
-          echo ${{ env.SUPER_SECRET }}
-          echo ${{ secrets.TESTTOKEN }}
-      env:
-          SUPER_SECRET: ${{ secrets.TESTTOKEN }}
 
     
