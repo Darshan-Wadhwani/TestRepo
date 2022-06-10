@@ -32,6 +32,6 @@ jobs:
       uses: actions/checkout@v3
     - name: GitHubDbCheckinPolicy
       run: |
-          C:\Users\D822180\source\repos\HelloWorldTestApp_Git\bin\Debug\netcoreapp3.1\HelloWorldTestApp_Git.exe ${{ github.event.number }} ${{ github.repository }} ${{ secrets.TESTTOKEN }}
+          C:\GitHubRepos\POH-Core\Source\POHCheckinPolicies\DatabaseStandards\bin\Debug\netcoreapp3.1\DatabaseStandards.exe ${{ github.event.number }} ${{ github.repository }} ${{ secrets.TESTTOKEN }}
 
     
